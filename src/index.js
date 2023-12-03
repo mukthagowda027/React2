@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import Nav from './nav';
 import reportWebVitals from './reportWebVitals';
+import ButtonComponent from './button';
+import App from './emp1';
+import ModalComponent from './modaledit ';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-
-    <Nav />
+    <App />
 
 );
 
