@@ -30,7 +30,7 @@ const Nav=()=>{
             </div>
         </div>
 
-        <div className='d-inline-flex'>
+        <div className='d-inline-flex align-items-center justify-content-center hidethis'>
                 <form className="d-flex" role="search">
                     <div className='search-container'>
                     <input className="form-control me-2 search-input" type="text" placeholder='Search here'  aria-label="Search" 
@@ -67,21 +67,18 @@ const Nav=()=>{
                         <span class="visually-hidden">unread messages</span>
                         </span></a>
                     </li>
-                    <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="/mimg1.jpg" className='rounded-circle' height="25px" width="25px"/>
-                            Admin
-                        </a>
-                        <ul className="dropdown-menu" style={{position:"absolute",right:"0",maxWidth: "100px" }} >
-                            <li><a className="dropdown-item" href="#">
-                            <img src="/mimg2.jpg" className='rounded-circle' height="25px" width="25px"/>
-                                Admin1</a></li>
-                            <li><a className="dropdown-item" href="#">
-                            <img src="/mimg7.jpg" className='rounded-circle' height="25px" width="25px"/>
-                                Admin2</a></li>
-                       </ul>
+                    <li>
+                
+                     <img src="/mimg2.jpg" className='rounded-circle' height="25px" width="25px"/>
+                     <select name="Admin" className='bg-transparent text-white' style={{border:"none"}}>
+                      <option>Admin</option>
+                       <option>Admin1</option>
+                       <option>Admin2</option>
+                      </select>
+                    
                    </li>
-                </ul>
+                  </ul>
+                
             </div>
          </div>
   </div>

@@ -9,7 +9,7 @@ const ModalComponent = ({ isOpen, onClose }) => {
     
     
   return (
-    <div className={`modal fade modal-lg  ${isOpen ? 'show' : ''}`}  style={{ display: isOpen ? 'block' : 'none' }} >
+    <div className={`modal fade modal-md ${isOpen ? 'show' : ''}`}  style={{ display: isOpen ? 'block' : 'none' }} >
       <div className="modal-dialog">
         <div className="modal-content">
           

@@ -7,8 +7,6 @@ import Nav from './nav';
 import ModalComponent2 from './modaledit ';
 import { Dropdown } from 'react-bootstrap';
 
-
-
 const App=()=>{
 
     const [isEditModalOpen, setEditModalOpen] = useState(false);
@@ -28,6 +26,7 @@ const App=()=>{
             setEditModalOpen(false);
           };
         
+          
 
     const data=[
         {firstname:"John",
@@ -254,8 +253,8 @@ const App=()=>{
                     <input type="text" class="form-control" placeholder="Employee Name"/>
                     </div>
                     <div className="col-12 col-md-3">
+                    
                     <div class="dropdown">
-            
                         <button class="btn border px-5 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style={{width:"300px"}}>
                           Select Designation
                         </button>
@@ -282,16 +281,16 @@ const App=()=>{
                         <h6>{el.username}</h6>
                         <p>{el.designation}</p>
 
-                        <div className="dropdown" style={{position:"absolute",top:"0",right:"10px"}}>
-                            <FontAwesomeIcon icon={faEllipsisV} className="dropdown-icon" onClick={toggleDropdown}
-                            />
-                            {dropdown && (
-                                <div className="dropdown-content">
-                                <a href="#" onClick={()=>openEditModal(index)}><FontAwesomeIcon icon={faPen}/>Edit</a> 
-                                <a href="#"><FontAwesomeIcon icon={faTrashAlt}/>Delete</a>
-                                </div>
-                            )}
+                            <div class="dropdown" style={{position:"absolute",top:"0",right:"10px"}}>
+                            <button class="btn "  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <FontAwesomeIcon icon={faEllipsisV} />
+                            </button>
+                            <ul class="dropdown-menu dropdown-content" >
+                                <li><a href="#" onClick={()=>openEditModal(index)}><FontAwesomeIcon icon={faPen}/>Edit</a></li>
+                                <li><a href="#"><FontAwesomeIcon icon={faTrashAlt}/>Delete</a></li>
+                            </ul>
                             </div>
+                            
                         </div>
                     </div>)}
                 

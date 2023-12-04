@@ -4,7 +4,6 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import reportWebVitals from './reportWebVitals';
-import ButtonComponent from './button';
 import App from './emp1';
 import ModalComponent from './modaledit ';
 

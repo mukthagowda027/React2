@@ -80,7 +80,7 @@ p{
   display: none;
   position: absolute;
   background-color: whitesmoke;
-  min-width: 150px;
+  width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -96,7 +96,15 @@ p{
   background-color: #ddd;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+
+
+@media only screen and (max-width:800px){
+  .hidethis{
+    display: none;
+  }
 }
+
+
+
+
 
