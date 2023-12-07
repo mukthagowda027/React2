@@ -12,10 +12,13 @@ code {
     monospace;
 }
 
-table,th,td{
+.custom-table,
+.custom-table th,
+.custom-table td {
   padding: 10px;
   text-align: center;
 }
+
 
 #hi{
   background-color: orange;
@@ -96,13 +99,21 @@ p{
   background-color: #ddd;
 }
 
-
-
-@media only screen and (max-width:800px){
-  .hidethis{
-    display: none;
-  }
+.custom-table2 {
+  width: 100%;
+  border-collapse: collapse;
 }
+
+.custom-table2 tbody tr:nth-child(odd) {
+  background-color: #f2f2f2; /* Set the background color for odd rows */
+}
+
+.custom-table2 tbody tr:nth-child(even) {
+  background-color:  #f5f5f5; /* Set the background color for even rows */
+}
+
+
+
 
 
 

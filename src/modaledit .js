@@ -213,7 +213,7 @@ if (!isOpen) return null;
 
           <div className='row'>
                 <div className='col'>
-                    <table className='table table-striped  '>
+                    <table className='table table-striped  custom-table'>
                         <thead>
                         <tr className='text-bold'>
                             <th>Module permission</th>
