@@ -34,7 +34,7 @@ const Nav = () => {
                   </a>
                 </div>
 
-                <div className='mx-2'>
+                <div className='mx-2 d-none d-lg-block'>
                 <FontAwesomeIcon icon={faBars} style={{ color: "white" }} />
                 </div>
 
@@ -43,7 +43,7 @@ const Nav = () => {
                 </div>
               </div>
 
-              <div className='d-flex align-items-center justify-content-center'>
+              <div className='d-flex align-items-center justify-content-center flex-column flex-sm-row'>
                 <form className="d-flex" role="search">
                   <div className='search-container'>
                     <input
@@ -63,21 +63,22 @@ const Nav = () => {
 
                 <ul className="navbar-nav mb-2 mb-lg-0 ms-lg-auto">
 
-                 <div className='d-flex justify-content-center align-items-center innerdiv'>
+                 <div className='d-flex justify-content-center align-items-center innerdiv flex-row flex-md-row  flex-lg-row'>
 
-                 <div className='me-2'>
+                 <div className='me-2 mb-2 mb-sm-2'>
                   <li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src="/alogo.png" width="25px" height="25px" alt="Flag" /> English
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li><a className="dropdown-item" href="#">English(UK)</a></li>
-                      <li><a className="dropdown-item" href="#">English(US)</a></li>
-                    </ul>
+                
+                      <img src="/alogo.png" width="25px" height="25px" alt="Flag" /> 
+                  
+                    <select name="language" className='bg-transparent text-white' style={{ border: "none" }}>
+                      <option>English</option>
+                      <option>French</option>
+                      <option>Spanish</option>
+                    </select>
                   </li>
                   </div>
 
-                 <div className='me-2'>
+                 <div className='me-2 mb-2 mb-sm-2'>
                   <li className="nav-item position-relative">
                     <a className="nav-link active" aria-current="page" href="#">
                       <FontAwesomeIcon icon={faBell} style={{ color: "white" }} />
@@ -88,7 +89,7 @@ const Nav = () => {
                   </li>
                   </div>
 
-                 <div className='me-2'>
+                 <div className='me-2 mb-2 mb-sm-2'>
                   <li className="nav-item position-relative">
                     <a className="nav-link active" aria-current="page" href="#">
                       <FontAwesomeIcon icon={faComment} style={{ color: "white" }} />
@@ -100,7 +101,7 @@ const Nav = () => {
                   </li>
                   </div>
 
-                  <div>
+                  <div className='me-2 mb-2 mb-sm-2'>
                   <li className="nav-item">
                     <img src="/mimg2.jpg" className='rounded-circle' height="25px" width="25px" alt="Profile" />
                     <select name="Admin" className='bg-transparent text-white' style={{ border: "none" }}>

@@ -316,30 +316,30 @@ const App = () => {
                         </div>
                     </div>
                 </div>
-                <div class="container-fixed mx-3 mt-4 mb-2">
+                <div class="container-fluid mt-4 mb-2 mx-1">
                     <div class="row justify-content-between row-gap-1">
-                        <div class="col-12 col-md-3">
+                        <div class="col-12 col-md-3 mb-2">
                             <input type="text" class="form-control" placeholder="Employee ID" />
                         </div>
-                        <div class="col-12 col-md-3">
+                        <div class="col-12 col-md-3 mb-2">
                             <input type="text" class="form-control" placeholder="Employee Name" />
                         </div>
-                        <div className="col-12 col-md-3">
+                        <div className="col-12 col-md-3 mb-2">
 
                             <div class="dropdown">
-                                <button class="btn border px-5 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style={{ width: "300px" }}>
+                                <button class="btn border dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style={{ width: "100%" }}>
                                     Select Designation
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item active" href="#">Web Developer</a></li>
-                                    <li><a class="dropdown-item" href="#">Android Developer</a></li>
-                                    <li><a class="dropdown-item" href="#">Team Leader</a></li>
+                                    <li><a className="dropdown-item active" href="#">Web Developer</a></li>
+                                    <li><a className="dropdown-item" href="#">Android Developer</a></li>
+                                    <li><a className="dropdown-item" href="#">Team Leader</a></li>
                                 </ul>
 
                             </div>
                         </div>
-                        <div class="col-12 col-md-3">
-                            <button className='btn ' style={{ backgroundColor: "lightgreen", color: "white", width: "350px", height: "35px" }}><strong>Search</strong></button>
+                        <div class="col-12 col-md-3 mb-2">
+                            <button className='btn ' style={{ backgroundColor: "lightgreen", color: "white", width: "100%" }}><strong>Search</strong></button>
                         </div>
                     </div>
                 </div>
@@ -347,11 +347,11 @@ const App = () => {
                 { viewMode === 'grid' ? (
 
 
-               <div className='container-fixed mt-3 gridview'>
+               <div className='container-fluid mt-3 gridview'>
                     <div class="row row-cols-1 row-cols-md-2  row-cols-lg-4 " style={{ marginRight: '-1px', marginLeft: '-1px' }}>
                         {data && data.map((el, index) =>
                             <div key={index} className={`col mb-4 ${index > 3 ? 'col-lg-3' : ''}`}>
-                                <div class="col border rounded mx-2 custom-div d-flex flex-column justify-content-center align-items-center" style={{ height: "140px", width: "350px" }}>
+                                <div class="col border rounded mx-2 custom-div d-flex flex-column justify-content-center align-items-center" style={{ height: "140px", width: "100%" }}>
                                     <img src={el.src} width="60px" height="60px" className='mb-2 rounded-circle' />
                                     <h6>{el.username}</h6>
                                     <p>{el.designation}</p>
